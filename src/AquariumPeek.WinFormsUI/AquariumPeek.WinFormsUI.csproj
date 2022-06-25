@@ -232,6 +232,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AquariumPeek.Application\AquariumPeek.Application.csproj">
+      <Project>{3e1b502b-6817-4263-8502-48d29dc76403}</Project>
+      <Name>AquariumPeek.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AquariumPeek.Infrastructure\AquariumPeek.Infrastructure.csproj">
+      <Project>{a32f1c6d-b1bb-4311-a03e-16e6e583d9e7}</Project>
+      <Name>AquariumPeek.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
